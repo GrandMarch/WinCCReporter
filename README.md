@@ -21,9 +21,8 @@ DotNetFormula、MySqlParallelQuery项目是辅助项目。
 5.  编写readwincctosql的tags.tl文件.这是一个文本文件，把需要需要存储的文件以行的形式写入。注意修改数据库的配置
 5.  运行wincc看效果
 
-#### 使用说明
+#### 报表配置文件说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  WinCCReporter/WinCCReportControl/db/中有几个报表实例。信息不是很敏感，没有删除太多。每一个xml文件都是一个报表。
+
 
