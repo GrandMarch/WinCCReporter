@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--基于单元格的报表表格设计-->
+<Report type="RowAdd">
+	<!--报表变量部分-->
+	<tags>
+		<tag>JQZ/PT001.Value</tag>
+		<tag>JQZ/PT002.Value</tag>
+		<tag>JQZ/PT004.Value</tag>
+		<tag>JQZ/PT005.Value</tag>		
+		<tag>JQZ/TRQ1_SSLL.Value</tag>
+		<tag>JQZ/TRQ2_SSLL.Value</tag>	
+		<tag>JQZ/PT405.Value</tag>
+		<tag>204_H1_SUM</tag>
+		<tag>JQZ/TRQ1_HourReport</tag>
+		<tag>JQZ/TRQ2_HourReport</tag>		
+		<tag>JQZ/TRQ1_CL.LJLL</tag>
+		<tag>JQZ/TRQ2_CL.LJLL</tag>		
+		<tag>JQZ/QTS1_CL.LJLL</tag>
+		<tag>JQZ/QTS2_CL.LJLL</tag>
+		<tag>JQZ/QTS1_Report</tag>
+		<tag>JQZ/QTS2_Report</tag>		
+		<tag sloppy="1">JQZ/TRQ1_CL.LJLL</tag>
+		<tag sloppy="1">JQZ/TRQ2_CL.LJLLe</tag>		
+		<tag sloppy="1">JQZ/QTS1_CL.LJLL</tag>
+		<tag sloppy="1">JQZ/QTS2_CL.LJLL</tag>		
+	</tags>
+	<!--报表表头部分-->
+	<head>
+		<range TopLeft="A1" BottomRight="I1" Font="微软雅黑" FontSize="14" HAlign="Center">威204H1平台采气日报表</range>
+		<range TopLeft="A2" BottomRight="A3" HAlign="Center">时间</range>
+		<range TopLeft="B2" BottomRight="D2" HAlign="Center">204H1-2井</range>
+		<range TopLeft="E2" BottomRight="G2" HAlign="Center">204H1-3井</range>
+		<range TopLeft="H2" BottomRight="H3" HAlign="Center">输压(MPa)</range>
+		<range TopLeft="I2" BottomRight="I3" HAlign="Center">平台瞬量(1E4m³)</range>
+
+		<range TopLeft="B3" >套压(MPa)</range>
+		<range TopLeft="C3" >油压(MPa)</range>
+		<range TopLeft="D3" >瞬量(1E4m³)</range>
+		<range TopLeft="E3" >套压(MPa)</range>
+		<range TopLeft="F3" >油压(MPa)</range>
+		<range TopLeft="G3" >瞬量(1E4m³)</range>
+
+	</head>
+	<!--报表主体部分-->
+	<body Start="A4">
+		<col Format="0.00" Type="txt">[INCREASETIME]</col>
+		<col Format="0.00" Type="calc">his('JQZ/PT002.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('JQZ/PT001.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('JQZ/TRQ1_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('JQZ/PT005.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('JQZ/PT004.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('JQZ/TRQ2_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('JQZ/PT405.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('204_H1_SUM',[INCREASETIME])</col>
+	</body>
+	<!--报表尾部-->
+	<foot>
+		<range TopLeft="A1" BottomRight="A1" HAlign="Center">日产气量(1E4m³)</range>
+		<range TopLeft="B1" BottomRight="D1" HAlign="Center" Format="0.0000" Type="calc">hos('JQZ/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="E1" BottomRight="G1" HAlign="Center" Format="0.0000" Type="calc">hos('JQZ/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="H1" HAlign="Center" Type="txt"></range>
+		<range TopLeft="I1" HAlign="Center" Type="txt"></range>		
+		<range TopLeft="A2" BottomRight="A2" HAlign="Center">月产气量(1E4m³)</range>
+		<range TopLeft="B2" BottomRight="D2" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ1_CL.LJLL')-hissloppy('JQZ/TRQ1_CL.LJLL',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="E2" BottomRight="G2" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ2_CL.LJLL')-hissloppy('JQZ/TRQ2_CL.LJLL',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="H2" HAlign="Center" Type="txt"></range>
+		<range TopLeft="I2" HAlign="Center" Type="txt"></range>
+		
+		<range TopLeft="A3" BottomRight="A3" HAlign="Center">年产气量(1E4m³)</range>
+		<range TopLeft="B3" BottomRight="D3" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ1_CL.LJLL')-hissloppy('JQZ/TRQ1_CL.LJLL',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="E3" BottomRight="G3" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ2_CL.LJLL')-hissloppy('JQZ/TRQ2_CL.LJLL',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="H3" HAlign="Center" Type="txt"></range>
+		<range TopLeft="I3" HAlign="Center" Type="txt"></range>
+		
+		
+		<range TopLeft="A4" BottomRight="C4" HAlign="Center" Format="0.0000" Type="txt">平台日产量</range>
+		<range TopLeft="D4" BottomRight="F4" HAlign="Center" Format="0.0000" Type="txt">平台月产量</range>
+		<range TopLeft="G4" BottomRight="I4" HAlign="Center" Format="0.0000" Type="txt">平台年常量</range>
+		<range TopLeft="A5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="B5" BottomRight="C5" HAlign="Center" Format="0.0000" Type="calc">hos('JQZ/TRQ1_HourReport',1)/10000+hos('JQZ/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="D5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="E5" BottomRight="F5" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ1_CL.LJLL')-hissloppy('JQZ/TRQ1_CL.LJLL',[FIRSTDAYOFMONTH])+hislast('JQZ/TRQ2_CL.LJLL')-hissloppy('JQZ/TRQ2_CL.LJLL',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="G5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="H5" BottomRight="I5" HAlign="Center" Format="0.0000" Type="calc">hislast('JQZ/TRQ1_CL.LJLL')-hissloppy('JQZ/TRQ1_CL.LJLL',[FIRSTDAYOFYEAR])+hislast('JQZ/TRQ2_CL.LJLL')-hissloppy('JQZ/TRQ2_CL.LJLL',[FIRSTDAYOFYEAR])</range>
+		
+		
+		<range TopLeft="A6" HAlign="Center" Format="0.000" Type="txt">水量</range>
+		<range TopLeft="B6" BottomRight="C6" HAlign="Center" Format="0.000" Type="calc">hos('JQZ/QTS1_Report',1)/1000+hos('JQZ/QTS2_Report',1)/1000</range>
+		<range TopLeft="D6" HAlign="Center" Format="0.000" Type="txt">水量</range>
+		<range TopLeft="E6" BottomRight="F6" HAlign="Center" Format="0.000" Type="calc">(hislast('JQZ/QTS1_CL.LJLL')-hissloppy('JQZ/QTS1_CL.LJLL',[FIRSTDAYOFMONTH])+hislast('JQZ/QTS2_CL.LJLL')-hissloppy('JQZ/QTS2_CL.LJLL',[FIRSTDAYOFMONTH]))/1000</range>
+		<range TopLeft="G6" HAlign="Center" Format="0.000" Type="txt">水量</range>
+		<range TopLeft="H6" BottomRight="I6" HAlign="Center" Format="0.000" Type="calc">(hislast('JQZ/QTS1_CL.LJLL')-hissloppy('JQZ/QTS1_CL.LJLL',[FIRSTDAYOFYEAR])+hislast('JQZ/QTS2_CL.LJLL')-hissloppy('JQZ/QTS2_CL.LJLL',[FIRSTDAYOFYEAR]))/1000</range>
+		
+	
+	</foot>
+</Report>

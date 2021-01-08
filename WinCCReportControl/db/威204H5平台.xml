@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--基于单元格的报表表格设计-->
+<Report type="RowAdd">
+	<!--报表变量部分-->
+	<tags>
+		<tag>H5/PT001.Value</tag>
+		<tag>H5/PT002.Value</tag>
+		<tag>H5/PT004.Value</tag>
+		<tag>H5/PT005.Value</tag>
+		<tag>H5/PT007.Value</tag>
+		<tag>H5/PT008.Value</tag>
+		<tag>H5/PT010.Value</tag>
+		<tag>H5/PT011.Value</tag>
+		<tag>H5/PT013.Value</tag>
+		<tag>H5/PT014.Value</tag>
+		<tag>H5/PT016.Value</tag>
+		<tag>H5/PT017.Value</tag>
+		<tag>H5/PT0101.Value</tag>
+		<tag>H5/TRQ1_SSLL.Value</tag>
+		<tag>H5/TRQ2_SSLL.Value</tag>
+		<tag>H5/TRQ1_YL.Value</tag>
+		<tag>H5/TRQ2_YL.Value</tag>
+		<tag>H5/TRQ1_HourReport</tag>
+		<tag>H5/TRQ2_HourReport</tag>
+		<tag>H5/TRQ3_HourReport</tag>
+		<tag>H5/QTS1_Report</tag>
+		<tag>H5/QTS2_Report</tag>
+		<tag>H5/QTS3_Report</tag>
+	</tags>
+	<!--报表表头部分-->
+	<head>
+		<range TopLeft="A1" BottomRight="Q1" Font="微软雅黑" FontSize="14" HAlign="Center">威204H5平台采气日报表</range>
+		<range TopLeft="A2" BottomRight="A2" >报表日期</range>
+		<range TopLeft="B2" BottomRight="D2">[REPORTDATE]</range>
+		<range TopLeft="N2" BottomRight="Q2">生产层位:龙马溪组</range>
+		<range TopLeft="A3" BottomRight="A4">时间</range>
+		<range TopLeft="B3" BottomRight="C3" HAlign="Center">H5-1井</range>
+		<range TopLeft="D3" BottomRight="E3" HAlign="Center">H5-2井</range>
+		<range TopLeft="F3" BottomRight="G3" HAlign="Center">H5-3井</range>
+		<range TopLeft="H3" BottomRight="I3" HAlign="Center">H5-4井</range>
+		<range TopLeft="J3" BottomRight="K3" HAlign="Center">H5-5井</range>
+		<range TopLeft="L3" BottomRight="M3" HAlign="Center">H5-6井</range>
+		<range TopLeft="N3" BottomRight="N4">瞬量(1E4m³)</range>
+		<range TopLeft="O3" BottomRight="O4">输压(MPa)</range>
+		<range TopLeft="P3" BottomRight="P4">巡检情况</range>
+		<range TopLeft="Q3" BottomRight="Q4">备注</range>
+		<range TopLeft="B4" >套压(MPa)</range>
+		<range TopLeft="C4" >油压(MPa)</range>
+		<range TopLeft="D4" >套压(MPa)</range>
+		<range TopLeft="E4" >油压(MPa)</range>
+		<range TopLeft="F4" >套压(MPa)</range>
+		<range TopLeft="G4" >油压(MPa)</range>
+		<range TopLeft="H4" >套压(MPa)</range>
+		<range TopLeft="I4" >油压(MPa)</range>
+		<range TopLeft="J4" >套压(MPa)</range>
+		<range TopLeft="K4" >油压(MPa)</range>
+		<range TopLeft="L4" >套压(MPa)</range>
+		<range TopLeft="M4" >油压(MPa)</range>		
+	</head>
+	<!--报表主体部分-->
+	<body Start="A5">
+		<col Format="0.00" Type="txt">[INCREASETIME]</col>
+		<col Format="0.00" Type="calc">his('H5/PT002.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT001.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT005.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT004.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT008.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT007.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT011.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT010.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT014.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT013.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT017.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT016.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H5/TRQ1_SSLL.Value',[INCREASETIME])+his('H5/TRQ2_SSLL.Value',[INCREASETIME])+his('H5/TRQ3_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H5/PT0101.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="txt"></col>
+		<col Format="0.00" Type="txt"></col>
+	</body>
+	<!--报表尾部-->
+	<foot>
+		<range TopLeft="A1" BottomRight="A2" Type="txt">合计</range>
+		<range TopLeft="B1" BottomRight="C1" Type="txt">产气(1E4m³)</range>
+		<range TopLeft="D1" BottomRight="E1" Type="txt">产水(m³)</range>
+		<range TopLeft="B2" BottomRight="C2" Type="calc" Format="0.0000">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1)+hos('H5/TRQ3_HourReport',1))/10000</range>
+		<range TopLeft="D2" BottomRight="E2" Type="calc" Format="0.000">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1)+hos('H5/QTS3_Report',1))/1000</range>
+		<range TopLeft="F1" Type="txt"></range>
+		<range TopLeft="G1" Type="txt"></range>
+		<range TopLeft="H1" Type="txt"></range>
+		<range TopLeft="I1" Type="txt"></range>
+		<range TopLeft="J1" Type="txt"></range>
+		<range TopLeft="K1" Type="txt"></range>
+		<range TopLeft="L1" Type="txt"></range>
+		<range TopLeft="M1" Type="txt"></range>
+		<range TopLeft="N1" Type="txt"></range>
+		<range TopLeft="O1" Type="txt"></range>
+		<range TopLeft="P1" Type="txt"></range>
+		<range TopLeft="Q1" Type="txt"></range>
+		<range TopLeft="F2" Type="txt"></range>
+		<range TopLeft="G2" Type="txt"></range>
+		<range TopLeft="H2" Type="txt"></range>
+		<range TopLeft="I2" Type="txt"></range>
+		<range TopLeft="J2" Type="txt"></range>
+		<range TopLeft="K2" Type="txt"></range>
+		<range TopLeft="L2" Type="txt"></range>
+		<range TopLeft="M2" Type="txt"></range>
+		<range TopLeft="N2" Type="txt"></range>
+		<range TopLeft="O2" Type="txt"></range>
+		<range TopLeft="P2" Type="txt"></range>
+		<range TopLeft="Q2" Type="txt"></range>
+		
+	</foot>
+</Report>

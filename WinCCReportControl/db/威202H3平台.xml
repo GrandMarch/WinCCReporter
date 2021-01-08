@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--基于单元格的报表表格设计-->
+<Report type="RowAdd">
+	<!--报表变量部分-->
+	<tags>
+		<tag>H3/PT001.Value</tag>
+		<tag>H3/PT002.Value</tag>
+		<tag>H3/PT004.Value</tag>
+		<tag>H3/PT005.Value</tag>
+		<tag>H3/PT007.Value</tag>
+		<tag>H3/PT008.Value</tag>
+		<tag>H3/PT010.Value</tag>
+		<tag>H3/PT011.Value</tag>
+		<tag>H3/PT013.Value</tag>
+		<tag>H3/PT014.Value</tag>
+		<tag>H3/PT016.Value</tag>
+		<tag>H3/PT017.Value</tag>
+		<tag>H3/TRQ1_SSLL.Value</tag>
+		<tag>H3/TRQ2_SSLL.Value</tag>
+		<tag>H3/TRQ3_SSLL.Value</tag>
+		<tag>H3/TRQ4_SSLL.Value</tag>
+		<tag>H3/TRQ5_SSLL.Value</tag>
+		<tag>H3/TRQ6_SSLL.Value</tag>
+		<tag>H3/PT0101.Value</tag>
+		<tag>202_H3_SUM</tag>
+		<tag>H3/TRQ1_HourReport</tag>
+		<tag>H3/TRQ2_HourReport</tag>
+		<tag>H3/TRQ3_HourReport</tag>
+		<tag>H3/TRQ4_HourReport</tag>
+		<tag>H3/TRQ5_HourReport</tag>
+		<tag>H3/TRQ6_HourReport</tag>
+		<tag>H3/TRQ1_LJLL.Value</tag>
+		<tag>H3/TRQ2_LJLL.Value</tag>
+		<tag>H3/TRQ3_LJLL.Value</tag>
+		<tag>H3/TRQ4_LJLL.Value</tag>
+		<tag>H3/TRQ5_LJLL.Value</tag>
+		<tag>H3/TRQ6_LJLL.Value</tag>
+		<tag>H3/QTS1_LJLL.Value</tag>
+		<tag>H3/QTS2_LJLL.Value</tag>
+		<tag>H3/QTS3_LJLL.Value</tag>
+		<tag>H3/QTS4_LJLL.Value</tag>
+		<tag>H3/QTS5_LJLL.Value</tag>
+		<tag>H3/QTS6_LJLL.Value</tag>
+		<tag>H3/QTS1_Report</tag>
+		<tag>H3/QTS2_Report</tag>
+		<tag>H3/QTS3_Report</tag>
+		<tag>H3/QTS4_Report</tag>
+		<tag>H3/QTS5_Report</tag>
+		<tag>H3/QTS6_Report</tag>
+		<tag sloppy="1">H3/TRQ1_LJLL.Value</tag>
+		<tag sloppy="1">H3/TRQ2_LJLL.Value</tag>
+		<tag sloppy="1">H3/TRQ3_LJLL.Value</tag>
+		<tag sloppy="1">H3/TRQ4_LJLL.Value</tag>
+		<tag sloppy="1">H3/TRQ5_LJLL.Value</tag>
+		<tag sloppy="1">H3/TRQ6_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS1_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS2_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS3_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS4_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS5_LJLL.Value</tag>
+		<tag sloppy="1">H3/QTS6_LJLL.Value</tag>
+	</tags>
+	<!--报表表头部分-->
+	<head>
+		<range TopLeft="A1" BottomRight="U1" Font="微软雅黑" FontSize="14" HAlign="Center">威202H3平台采气日报表</range>
+		<range TopLeft="A2" BottomRight="A3" HAlign="Center">时间</range>
+		<range TopLeft="B2" BottomRight="D2" HAlign="Center">202H3-1井</range>
+		<range TopLeft="E2" BottomRight="G2" HAlign="Center">202H3-2井</range>
+		<range TopLeft="H2" BottomRight="J2" HAlign="Center">202H3-3井</range>
+		<range TopLeft="K2" BottomRight="M2" HAlign="Center">202H3-4井</range>
+		<range TopLeft="N2" BottomRight="P2" HAlign="Center">202H3-5井</range>
+		<range TopLeft="Q2" BottomRight="S2" HAlign="Center">202H3-6井</range>
+		<range TopLeft="T2" BottomRight="T3" HAlign="Center">输压(MPa)</range>
+		<range TopLeft="U2" BottomRight="U3" HAlign="Center">平台瞬量(1E4m³)</range>
+
+		<range TopLeft="B3" >套压(MPa)</range>
+		<range TopLeft="C3" >油压(MPa)</range>
+		<range TopLeft="D3" >瞬量(1E4m³)</range>
+		<range TopLeft="E3" >套压(MPa)</range>
+		<range TopLeft="F3" >油压(MPa)</range>
+		<range TopLeft="G3" >瞬量(1E4m³)</range>
+		<range TopLeft="H3" >套压(MPa)</range>
+		<range TopLeft="I3" >油压(MPa)</range>
+		<range TopLeft="J3" >瞬量(1E4m³)</range>
+		<range TopLeft="K3" >套压(MPa)</range>
+		<range TopLeft="L3" >油压(MPa)</range>
+		<range TopLeft="M3" >瞬量(1E4m³)</range>
+		<range TopLeft="N3" >套压(MPa)</range>
+		<range TopLeft="O3" >油压(MPa)</range>
+		<range TopLeft="P3" >瞬量(1E4m³)</range>
+		<range TopLeft="Q3" >套压(MPa)</range>
+		<range TopLeft="R3" >油压(MPa)</range>
+		<range TopLeft="S3" >瞬量(1E4m³)</range>	
+	</head>
+	<!--报表主体部分-->
+	<body Start="A4">
+		<col Format="0.00" Type="txt">[INCREASETIME]</col>
+		<col Format="0.00" Type="calc">his('H3/PT002.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT001.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ1_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT005.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT004.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ2_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT008.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT007.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ3_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT011.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT010.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ4_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT014.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT013.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ5_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT017.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT016.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H3/TRQ6_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H3/PT0101.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('202_H3_SUM',[INCREASETIME])</col>
+	</body>
+	<!--报表尾部-->
+	<foot>
+		<range TopLeft="A1" BottomRight="A1" HAlign="Center">日产气量(1E4m³)</range>
+		<range TopLeft="B1" BottomRight="D1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="E1" BottomRight="G1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="H1" BottomRight="J1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ3_HourReport',1)/10000</range>
+		<range TopLeft="K1" BottomRight="M1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ4_HourReport',1)/10000</range>
+		<range TopLeft="N1" BottomRight="P1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ5_HourReport',1)/10000</range>
+		<range TopLeft="Q1" BottomRight="S1" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ6_HourReport',1)/10000</range>
+		<range TopLeft="T1" HAlign="Center" Type="txt"></range>
+		<range TopLeft="U1" HAlign="Center" Type="txt"></range>
+		
+		<range TopLeft="A2" BottomRight="A2" HAlign="Center">月产气量(1E4m³)</range>
+		<range TopLeft="B2" BottomRight="D2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ1_LJLL.Value')-hissloppy('H3/TRQ1_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="E2" BottomRight="G2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ2_LJLL.Value')-hissloppy('H3/TRQ2_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="H2" BottomRight="J2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ3_LJLL.Value')-hissloppy('H3/TRQ3_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="K2" BottomRight="M2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ4_LJLL.Value')-hissloppy('H3/TRQ4_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="N2" BottomRight="P2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ5_LJLL.Value')-hissloppy('H3/TRQ5_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="Q2" BottomRight="S2" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ6_LJLL.Value')-hissloppy('H3/TRQ6_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="T2" HAlign="Center" Type="txt"></range>
+		<range TopLeft="U2" HAlign="Center" Type="txt"></range>
+		
+		<range TopLeft="A3" BottomRight="A3" HAlign="Center">年产气量(1E4m³)</range>
+		<range TopLeft="B3" BottomRight="D3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ1_LJLL.Value')-hissloppy('H3/TRQ1_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="E3" BottomRight="G3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ2_LJLL.Value')-hissloppy('H3/TRQ2_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="H3" BottomRight="J3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ3_LJLL.Value')-hissloppy('H3/TRQ3_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="K3" BottomRight="M3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ4_LJLL.Value')-hissloppy('H3/TRQ4_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="N3" BottomRight="P3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ5_LJLL.Value')-hissloppy('H3/TRQ5_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="Q3" BottomRight="S3" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ6_LJLL.Value')-hissloppy('H3/TRQ6_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="T3" HAlign="Center" Type="txt"></range>
+		<range TopLeft="U3" HAlign="Center" Type="txt"></range>
+		<range TopLeft="A4" BottomRight="D4" HAlign="Center" Format="0.0000" Type="txt">平台日产量</range>
+		<range TopLeft="E4" BottomRight="H4" HAlign="Center" Format="0.0000" Type="txt">平台月产量</range>
+		<range TopLeft="I4" BottomRight="L4" HAlign="Center" Format="0.0000" Type="txt">平台年常量</range>
+		<range TopLeft="A5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="B5" BottomRight="D5" HAlign="Center" Format="0.0000" Type="calc">hos('H3/TRQ1_HourReport',1)/10000+hos('H3/TRQ2_HourReport',1)/10000+hos('H3/TRQ3_HourReport',1)/10000+hos('H3/TRQ4_HourReport',1)/10000+hos('H3/TRQ5_HourReport',1)/10000+hos('H3/TRQ6_HourReport',1)/10000</range>
+		<range TopLeft="E5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="F5" BottomRight="H5" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ1_LJLL.Value')-hissloppy('H3/TRQ1_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/TRQ2_LJLL.Value')-hissloppy('H3/TRQ2_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/TRQ3_LJLL.Value')-hissloppy('H3/TRQ3_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/TRQ4_LJLL.Value')-hissloppy('H3/TRQ4_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/TRQ5_LJLL.Value')-hissloppy('H3/TRQ5_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/TRQ6_LJLL.Value')-hissloppy('H3/TRQ6_LJLL.Value',[FIRSTDAYOFMONTH])</range>
+		<range TopLeft="I5" HAlign="Center" Format="0.0000" Type="txt">气量</range>
+		<range TopLeft="J5" BottomRight="L5" HAlign="Center" Format="0.0000" Type="calc">hislast('H3/TRQ1_LJLL.Value')-hissloppy('H3/TRQ1_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/TRQ2_LJLL.Value')-hissloppy('H3/TRQ2_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/TRQ3_LJLL.Value')-hissloppy('H3/TRQ3_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/TRQ4_LJLL.Value')-hissloppy('H3/TRQ4_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/TRQ5_LJLL.Value')-hissloppy('H3/TRQ5_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/TRQ6_LJLL.Value')-hissloppy('H3/TRQ6_LJLL.Value',[FIRSTDAYOFYEAR])</range>
+		<range TopLeft="A6" HAlign="Center" Format="0.0000" Type="txt">水量</range>
+		<range TopLeft="B6" BottomRight="D6" HAlign="Center" Format="0.000" Type="calc">(hos('H3/QTS1_Report',1)+hos('H3/QTS2_Report',1)+hos('H3/QTS3_Report',1)+hos('H3/QTS4_Report',1)+hos('H3/QTS5_Report',1)+hos('H3/QTS6_Report',1))/1000</range>
+		<range TopLeft="E6" HAlign="Center" Format="0.0000" Type="txt">水量</range>
+		<range TopLeft="F6" BottomRight="H6" HAlign="Center" Format="0.000" Type="calc">(hislast('H3/QTS1_LJLL.Value')-hissloppy('H3/QTS1_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/QTS2_LJLL.Value')-hissloppy('H3/QTS2_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/QTS3_LJLL.Value')-hissloppy('H3/QTS3_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/QTS4_LJLL.Value')-hissloppy('H3/QTS4_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/QTS5_LJLL.Value')-hissloppy('H3/QTS5_LJLL.Value',[FIRSTDAYOFMONTH])+hislast('H3/QTS6_LJLL.Value')-hissloppy('H3/QTS6_LJLL.Value',[FIRSTDAYOFMONTH]))/1000</range>
+		<range TopLeft="I6" HAlign="Center" Format="0.0000" Type="txt">水量</range>
+		<range TopLeft="J6" BottomRight="L6" HAlign="Center" Format="0.000" Type="calc">(hislast('H3/QTS1_LJLL.Value')-hissloppy('H3/QTS1_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/QTS2_LJLL.Value')-hissloppy('H3/QTS2_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/QTS3_LJLL.Value')-hissloppy('H3/QTS3_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/QTS4_LJLL.Value')-hissloppy('H3/QTS4_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/QTS5_LJLL.Value')-hissloppy('H3/QTS5_LJLL.Value',[FIRSTDAYOFYEAR])+hislast('H3/QTS6_LJLL.Value')-hissloppy('H3/QTS6_LJLL.Value',[FIRSTDAYOFYEAR]))/1000</range>
+		<range TopLeft="M4" BottomRight="U4" HAlign="Center" Type="txt">值班人 </range>
+		<range TopLeft="M5" BottomRight="O5" HAlign="Center" Type="txt">白班 </range>
+		<range TopLeft="M6" BottomRight="O6" HAlign="Center" Type="txt">夜班 </range>
+		<range TopLeft="P5" BottomRight="U5" HAlign="Center" Type="txt">XXX </range>
+		<range TopLeft="P6" BottomRight="U6" HAlign="Center" Type="txt">XXX </range>
+	</foot>
+</Report>

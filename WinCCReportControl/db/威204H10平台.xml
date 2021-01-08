@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--基于单元格的报表表格设计-->
+<Report type="RowAdd">
+	<!--报表变量部分-->
+	<tags>
+		<tag>H10/PT001.Value</tag>
+		<tag>H10/PT002.Value</tag>
+		<tag>H10/TRQ1_SSLL.Value</tag>
+		<tag>H10/TRQ1_YL.Value</tag>
+		<tag>H10/TRQ1_HourReport</tag>
+		<tag>H10/QTS1_Report</tag>
+	</tags>
+	<!--报表表头部分-->
+	<head>
+		<range TopLeft="A1" BottomRight="G1" Font="微软雅黑" FontSize="14" HAlign="Center">威204H10平台采气日报表</range>
+		<range TopLeft="A2" BottomRight="A2" >报表日期</range>
+		<range TopLeft="B2" BottomRight="D2">[REPORTDATE]</range>
+		<range TopLeft="E2" BottomRight="G2">生产层位:龙马溪组</range>
+		<range TopLeft="A3" BottomRight="A4">时间</range>
+		<range TopLeft="B3" BottomRight="C3" HAlign="Center">H10-1井</range>
+		<range TopLeft="D3" BottomRight="D4">瞬量(1E4m³)</range>
+		<range TopLeft="E3" BottomRight="E4">输压(MPa)</range>
+		<range TopLeft="F3" BottomRight="F4">巡检情况</range>
+		<range TopLeft="G3" BottomRight="G4">备注</range>
+		<range TopLeft="B4" >套压(MPa)</range>
+		<range TopLeft="C4" >油压(MPa)</range>
+	</head>
+	<!--报表主体部分-->
+	<body Start="A5">
+		<col Format="0.00" Type="txt">[INCREASETIME]</col>
+		<col Format="0.00" Type="calc">his('H10/PT002.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H10/PT001.Value',[INCREASETIME])</col>
+		<col Format="0.0000" Type="calc">his('H10/TRQ1_SSLL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="calc">his('H10/TRQ1_YL.Value',[INCREASETIME])</col>
+		<col Format="0.00" Type="txt"></col>
+		<col Format="0.00" Type="txt"></col>
+	</body>
+	<!--报表尾部-->
+	<foot>
+		<range TopLeft="A1" BottomRight="A2" Type="txt">合计</range>
+		<range TopLeft="B1" BottomRight="C1" Type="txt">产气(1E4m³)</range>
+		<range TopLeft="D1" BottomRight="E1" Type="txt">产水(m³)</range>
+		<range TopLeft="B2" BottomRight="C2" Type="calc" Format="0.0000">hos('H10/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="D2" BottomRight="E2" Type="calc" Format="0.000">hos('H10/QTS1_Report',1)/1000</range>
+		<range TopLeft="F1" Type="txt"></range>
+		<range TopLeft="G1" Type="txt"></range>		
+		<range TopLeft="F2" Type="txt"></range>
+		<range TopLeft="G2" Type="txt"></range>		
+	</foot>
+</Report>

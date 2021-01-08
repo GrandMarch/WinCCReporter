@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--基于单元格的报表表格设计-->
+<Report type="Fixed">
+	<!--报表变量部分-->
+	<tags>
+		<tag>JQZ/PT001.Value</tag>
+		<tag>JQZ/PT002.Value</tag>
+		<tag>JQZ/PT405.Value</tag>
+		<tag>JQZ/TRQ1_HourReport</tag>
+		<tag>JQZ/QTS1_Report</tag>
+		<tag>JQZ/TRQ1_SSLL.Value</tag>
+		<tag>JQZ/TRQ1_WD.Value</tag>
+		<tag>JQZ/PT004.Value</tag>
+		<tag>JQZ/PT005.Value</tag>
+		<tag>JQZ/TRQ2_HourReport</tag>
+		<tag>JQZ/QTS2_Report</tag>
+		<tag>JQZ/TRQ2_SSLL.Value</tag>
+		<tag>JQZ/TRQ2_WD.Value</tag>
+		<!--H4平台-->
+		<tag>H4/PT001.Value</tag>
+		<tag>H4/PT002.Value</tag>
+		<tag>H4/PT004.Value</tag>
+		<tag>H4/PT005.Value</tag>
+		<tag>H4/PT007.Value</tag>
+		<tag>H4/PT008.Value</tag>
+		<tag>H4/PT010.Value</tag>
+		<tag>H4/PT011.Value</tag>
+		<tag>H4/TRQ1_YL.Value</tag>
+		<tag>H4/TRQ1_WD.Value</tag>
+		<tag>H4/TRQ1_SSLL.Value</tag>
+		<tag>H4/TRQ1_HourReport</tag>
+		<tag>H4/QTS1_Report</tag>
+		<!--H5平台-->
+		<tag>H5/PT001.Value</tag>
+		<tag>H5/PT002.Value</tag>
+		<tag>H5/PT004.Value</tag>
+		<tag>H5/PT005.Value</tag>
+		<tag>H5/PT007.Value</tag>
+		<tag>H5/PT008.Value</tag>
+		<tag>H5/PT010.Value</tag>
+		<tag>H5/PT011.Value</tag>
+		<tag>H5/PT013.Value</tag>
+		<tag>H5/PT014.Value</tag>
+		<tag>H5/PT016.Value</tag>
+		<tag>H5/PT017.Value</tag>
+		<tag>H5/TRQ1_YL.Value</tag>
+		<tag>H5/TRQ1_WD.Value</tag>
+		<tag>H5/TRQ1_SSLL.Value</tag>
+		<tag>H5/TRQ1_HourReport</tag>
+		<tag>H5/QTS1_Report</tag>	
+		<tag>H5/TRQ2_YL.Value</tag>
+		<tag>H5/TRQ2_WD.Value</tag>
+		<tag>H5/TRQ2_SSLL.Value</tag>
+		<tag>H5/TRQ2_HourReport</tag>
+		<tag>H5/QTS2_Report</tag>	
+		<!--H10平台-->
+		<tag>H10/PT001.Value</tag>
+		<tag>H10/PT002.Value</tag>
+		<tag>H10/TRQ1_YL.Value</tag>
+		<tag>H10/TRQ1_WD.Value</tag>
+		<tag>H10/TRQ1_SSLL.Value</tag>
+		<tag>H10/TRQ1_HourReport</tag>
+		<tag>H10/QTS1_Report</tag>
+		<!--202H1平台-->
+		<tag>H1/PT001.Value</tag>
+		<tag>H1/PT002.Value</tag>
+		<tag>H1/PT004.Value</tag>
+		<tag>H1/PT005.Value</tag>
+		<tag>H1/PT007.Value</tag>
+		<tag>H1/PT008.Value</tag>
+		<tag>H1/PT010.Value</tag>
+		<tag>H1/PT011.Value</tag>
+		<tag>H1/PT013.Value</tag>
+		<tag>H1/PT014.Value</tag>
+		<tag>H1/PT016.Value</tag>
+		<tag>H1/PT017.Value</tag>
+		<tag>H1/TRQ1_YL.Value</tag>
+		<tag>H1/TRQ1_WD.Value</tag>
+		<tag>H1/TRQ1_SSLL.Value</tag>
+		<tag>H1/TRQ1_HourReport</tag>
+		<tag>H1/QTS1_Report</tag>	
+		<tag>H1/TRQ2_YL.Value</tag>
+		<tag>H1/TRQ2_WD.Value</tag>
+		<tag>H1/TRQ2_SSLL.Value</tag>
+		<tag>H1/TRQ2_HourReport</tag>
+		<tag>H1/QTS2_Report</tag>	
+		<tag>H1/TRQ3_YL.Value</tag>
+		<tag>H1/TRQ3_WD.Value</tag>
+		<tag>H1/TRQ3_SSLL.Value</tag>
+		<tag>H1/TRQ3_HourReport</tag>
+		<tag>H1/QTS3_Report</tag>	
+		<tag>H1/TRQ4_YL.Value</tag>
+		<tag>H1/TRQ4_WD.Value</tag>
+		<tag>H1/TRQ4_SSLL.Value</tag>
+		<tag>H1/TRQ4_HourReport</tag>
+		<tag>H1/QTS4_Report</tag>
+		<tag>H1/TRQ5_YL.Value</tag>
+		<tag>H1/TRQ5_WD.Value</tag>
+		<tag>H1/TRQ5_SSLL.Value</tag>
+		<tag>H1/TRQ5_HourReport</tag>
+		<tag>H1/QTS5_Report</tag>	
+		<tag>H1/TRQ6_YL.Value</tag>
+		<tag>H1/TRQ6_WD.Value</tag>
+		<tag>H1/TRQ6_SSLL.Value</tag>
+		<tag>H1/TRQ6_HourReport</tag>
+		<tag>H1/QTS6_Report</tag>
+		<!--202H3平台-->
+		<tag>H3/PT001.Value</tag>
+		<tag>H3/PT002.Value</tag>
+		<tag>H3/PT004.Value</tag>
+		<tag>H3/PT005.Value</tag>
+		<tag>H3/PT007.Value</tag>
+		<tag>H3/PT008.Value</tag>
+		<tag>H3/PT010.Value</tag>
+		<tag>H3/PT011.Value</tag>
+		<tag>H3/PT013.Value</tag>
+		<tag>H3/PT014.Value</tag>
+		<tag>H3/PT016.Value</tag>
+		<tag>H3/PT017.Value</tag>
+		<tag>H3/TRQ1_YL.Value</tag>
+		<tag>H3/TRQ1_WD.Value</tag>
+		<tag>H3/TRQ1_SSLL.Value</tag>
+		<tag>H3/TRQ1_HourReport</tag>
+		<tag>H3/QTS1_Report</tag>	
+		<tag>H3/TRQ2_YL.Value</tag>
+		<tag>H3/TRQ2_WD.Value</tag>
+		<tag>H3/TRQ2_SSLL.Value</tag>
+		<tag>H3/TRQ2_HourReport</tag>
+		<tag>H3/QTS2_Report</tag>	
+		<tag>H3/TRQ3_YL.Value</tag>
+		<tag>H3/TRQ3_WD.Value</tag>
+		<tag>H3/TRQ3_SSLL.Value</tag>
+		<tag>H3/TRQ3_HourReport</tag>
+		<tag>H3/QTS3_Report</tag>	
+		<tag>H3/TRQ4_YL.Value</tag>
+		<tag>H3/TRQ4_WD.Value</tag>
+		<tag>H3/TRQ4_SSLL.Value</tag>
+		<tag>H3/TRQ4_HourReport</tag>
+		<tag>H3/QTS4_Report</tag>
+		<tag>H3/TRQ5_YL.Value</tag>
+		<tag>H3/TRQ5_WD.Value</tag>
+		<tag>H3/TRQ5_SSLL.Value</tag>
+		<tag>H3/TRQ5_HourReport</tag>
+		<tag>H3/QTS5_Report</tag>	
+		<tag>H3/TRQ6_YL.Value</tag>
+		<tag>H3/TRQ6_WD.Value</tag>
+		<tag>H3/TRQ6_SSLL.Value</tag>
+		<tag>H3/TRQ6_HourReport</tag>
+		<tag>H3/QTS6_Report</tag>
+	</tags>
+	<!--报表表头部分-->
+	<head>
+		<range TopLeft="B1" BottomRight="B1">最高套压(MPa)</range>
+		<range TopLeft="C1" BottomRight="C1">最低套压(MPa)</range>
+		<range TopLeft="D1" BottomRight="D1">平均套压(MPa)</range>
+		<range TopLeft="E1" BottomRight="E1">最高油压(MPa)</range>
+		<range TopLeft="F1" BottomRight="F1">最低油压(MPa)</range>
+		<range TopLeft="G1" BottomRight="G1">平均油压(MPa)</range>
+		<range TopLeft="H1" BottomRight="H1">输压(MPa)</range>
+		<range TopLeft="I1" BottomRight="I1">外输气量(1E4m³)</range>
+		<range TopLeft="J1" BottomRight="J1">排液量(m³)</range>
+		<range TopLeft="K1" BottomRight="K1">瞬时流量1(1E4m³)</range>
+		<range TopLeft="L1" BottomRight="L1">瞬时流量2(1E4m³)</range>
+		<range TopLeft="M1" BottomRight="M1">温度1(℃)</range>
+		<range TopLeft="N1" BottomRight="N1">温度2(℃)</range>
+	</head>
+	<!--报表主体部分-->
+	<body>
+		<!--204H1-2-->
+		<range TopLeft="A2" Format="0.00" Type="text">威204H1-2井</range>
+		<range TopLeft="B2" Format="0.00" Type="calc">hismax('JQZ/PT002.Value')</range>
+		<range TopLeft="C2" Format="0.00" Type="calc">hismin('JQZ/PT002.Value')</range>
+		<range TopLeft="D2" Format="0.00" Type="calc">hisavg('JQZ/PT002.Value')</range>
+		<range TopLeft="E2" Format="0.00" Type="calc">hismax('JQZ/PT001.Value')</range>
+		<range TopLeft="F2" Format="0.00" Type="calc">hismin('JQZ/PT001.Value')</range>
+		<range TopLeft="G2" Format="0.00" Type="calc">hisavg('JQZ/PT001.Value')</range>
+		<range TopLeft="H2" Format="0.00" Type="calc">hislast('JQZ/PT405.Value')</range>
+		<range TopLeft="I2" Format="0.0000" Type="calc">hos('JQZ/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J2" Format="0.000" Type="calc">hos('JQZ/QTS1_Report',1)/1000</range>
+		<range TopLeft="K2" Format="0.0000" Type="calc">hisfirst('JQZ/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L2" Format="0.0000" Type="calc">hislast('JQZ/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M2" Format="0.00" Type="calc">hisfirst('JQZ/TRQ1_WD.Value')</range>
+		<range TopLeft="N2" Format="0.00" Type="calc">hislast('JQZ/TRQ1_WD.Value')</range>
+		<!--204H1-3-->
+		<range TopLeft="A3" Format="0.00" Type="text">威204H1-3井</range>
+		<range TopLeft="B3" Format="0.00" Type="calc">hismax('JQZ/PT005.Value')</range>
+		<range TopLeft="C3" Format="0.00" Type="calc">hismin('JQZ/PT005.Value')</range>
+		<range TopLeft="D3" Format="0.00" Type="calc">hisavg('JQZ/PT005.Value')</range>
+		<range TopLeft="E3" Format="0.00" Type="calc">hismax('JQZ/PT004.Value')</range>
+		<range TopLeft="F3" Format="0.00" Type="calc">hismin('JQZ/PT004.Value')</range>
+		<range TopLeft="G3" Format="0.00" Type="calc">hisavg('JQZ/PT004.Value')</range>
+		<range TopLeft="H3" Format="0.00" Type="calc">hislast('JQZ/PT405.Value')</range>
+		<range TopLeft="I3" Format="0.0000" Type="calc">hos('JQZ/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="J3" Format="0.000" Type="calc">hos('JQZ/QTS2_Report',1)/1000</range>
+		<range TopLeft="K3" Format="0.0000" Type="calc">hisfirst('JQZ/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L3" Format="0.0000" Type="calc">hislast('JQZ/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M3" Format="0.00" Type="calc">hisfirst('JQZ/TRQ2_WD.Value')</range>
+		<range TopLeft="N3" Format="0.00" Type="calc">hislast('JQZ/TRQ2_WD.Value')</range>
+		<!--204H4-1-->
+		<range TopLeft="A4" Format="0.00" Type="text">威204H4-1井</range>
+		<range TopLeft="B4" Format="0.00" Type="calc">hismax('H4/PT002.Value')</range>
+		<range TopLeft="C4" Format="0.00" Type="calc">hismin('H4/PT002.Value')</range>
+		<range TopLeft="D4" Format="0.00" Type="calc">hisavg('H4/PT002.Value')</range>
+		<range TopLeft="E4" Format="0.00" Type="calc">hismax('H4/PT001.Value')</range>
+		<range TopLeft="F4" Format="0.00" Type="calc">hismin('H4/PT001.Value')</range>
+		<range TopLeft="G4" Format="0.00" Type="calc">hisavg('H4/PT001.Value')</range>
+		<range TopLeft="H4" Format="0.00" Type="calc">hislast('H4/TRQ1_YL.Value')</range>
+		<range TopLeft="I4" Format="0.0000" Type="calc">hos('H4/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J4" Format="0.000" Type="calc">hos('H4/QTS1_Report',1)/1000</range>
+		<range TopLeft="K4" Format="0.0000" Type="calc">hisfirst('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L4" Format="0.0000" Type="calc">hislast('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M4" Format="0.00" Type="calc">hisfirst('H4/TRQ1_WD.Value')</range>
+		<range TopLeft="N4" Format="0.00" Type="calc">hislast('H4/TRQ1_WD.Value')</range>
+		<!--204H4-2-->
+		<range TopLeft="A5" Format="0.00" Type="text">威204H4-2井</range>
+		<range TopLeft="B5" Format="0.00" Type="calc">hismax('H4/PT005.Value')</range>
+		<range TopLeft="C5" Format="0.00" Type="calc">hismin('H4/PT005.Value')</range>
+		<range TopLeft="D5" Format="0.00" Type="calc">hisavg('H4/PT005.Value')</range>
+		<range TopLeft="E5" Format="0.00" Type="calc">hismax('H4/PT004.Value')</range>
+		<range TopLeft="F5" Format="0.00" Type="calc">hismin('H4/PT004.Value')</range>
+		<range TopLeft="G5" Format="0.00" Type="calc">hisavg('H4/PT004.Value')</range>
+		<range TopLeft="H5" Format="0.00" Type="calc">hislast('H4/TRQ1_YL.Value')</range>
+		<range TopLeft="I5" Format="0.0000" Type="calc">hos('H4/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J5" Format="0.000" Type="calc">hos('H4/QTS1_Report',1)/1000</range>
+		<range TopLeft="K5" Format="0.0000" Type="calc">hisfirst('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L5" Format="0.0000" Type="calc">hislast('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M5" Format="0.00" Type="calc">hisfirst('H4/TRQ1_WD.Value')</range>
+		<range TopLeft="N5" Format="0.00" Type="calc">hislast('H4/TRQ1_WD.Value')</range>
+		<!--204H4-3-->
+		<range TopLeft="A6" Format="0.00" Type="text">威204H4-3井</range>
+		<range TopLeft="B6" Format="0.00" Type="calc">hismax('H4/PT008.Value')</range>
+		<range TopLeft="C6" Format="0.00" Type="calc">hismin('H4/PT008.Value')</range>
+		<range TopLeft="D6" Format="0.00" Type="calc">hisavg('H4/PT008.Value')</range>
+		<range TopLeft="E6" Format="0.00" Type="calc">hismax('H4/PT007.Value')</range>
+		<range TopLeft="F6" Format="0.00" Type="calc">hismin('H4/PT007.Value')</range>
+		<range TopLeft="G6" Format="0.00" Type="calc">hisavg('H4/PT007.Value')</range>
+		<range TopLeft="H6" Format="0.00" Type="calc">hislast('H4/TRQ1_YL.Value')</range>
+		<range TopLeft="I6" Format="0.0000" Type="calc">hos('H4/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J6" Format="0.000" Type="calc">hos('H4/QTS1_Report',1)/1000</range>
+		<range TopLeft="K6" Format="0.0000" Type="calc">hisfirst('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L6" Format="0.0000" Type="calc">hislast('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M6" Format="0.00" Type="calc">hisfirst('H4/TRQ1_WD.Value')</range>
+		<range TopLeft="N6" Format="0.00" Type="calc">hislast('H4/TRQ1_WD.Value')</range>
+		<!--204H4-4-->
+		<range TopLeft="A7" Format="0.00" Type="text">威204H4-4井</range>
+		<range TopLeft="B7" Format="0.00" Type="calc">hismax('H4/PT011.Value')</range>
+		<range TopLeft="C7" Format="0.00" Type="calc">hismin('H4/PT011.Value')</range>
+		<range TopLeft="D7" Format="0.00" Type="calc">hisavg('H4/PT011.Value')</range>
+		<range TopLeft="E7" Format="0.00" Type="calc">hismax('H4/PT010.Value')</range>
+		<range TopLeft="F7" Format="0.00" Type="calc">hismin('H4/PT010.Value')</range>
+		<range TopLeft="G7" Format="0.00" Type="calc">hisavg('H4/PT010.Value')</range>
+		<range TopLeft="H7" Format="0.00" Type="calc">hislast('H4/TRQ1_YL.Value')</range>
+		<range TopLeft="I7" Format="0.0000" Type="calc">hos('H4/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J7" Format="0.000" Type="calc">hos('H4/QTS1_Report',1)/1000</range>
+		<range TopLeft="K7" Format="0.0000" Type="calc">hisfirst('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L7" Format="0.0000" Type="calc">hislast('H4/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M7" Format="0.00" Type="calc">hisfirst('H4/TRQ1_WD.Value')</range>
+		<range TopLeft="N7" Format="0.00" Type="calc">hislast('H4/TRQ1_WD.Value')</range>
+		<!--204H5-1-->
+		<range TopLeft="A8" Format="0.00" Type="text">威204H5-1井</range>
+		<range TopLeft="B8" Format="0.00" Type="calc">hismax('H5/PT002.Value')</range>
+		<range TopLeft="C8" Format="0.00" Type="calc">hismin('H5/PT002.Value')</range>
+		<range TopLeft="D8" Format="0.00" Type="calc">hisavg('H5/PT002.Value')</range>
+		<range TopLeft="E8" Format="0.00" Type="calc">hismax('H5/PT001.Value')</range>
+		<range TopLeft="F8" Format="0.00" Type="calc">hismin('H5/PT001.Value')</range>
+		<range TopLeft="G8" Format="0.00" Type="calc">hisavg('H5/PT001.Value')</range>
+		<range TopLeft="H8" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I8" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J8" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K8" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L8" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M8" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N8" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H5-2-->
+		<range TopLeft="A9" Format="0.00" Type="text">威204H5-2井</range>
+		<range TopLeft="B9" Format="0.00" Type="calc">hismax('H5/PT005.Value')</range>
+		<range TopLeft="C9" Format="0.00" Type="calc">hismin('H5/PT005.Value')</range>
+		<range TopLeft="D9" Format="0.00" Type="calc">hisavg('H5/PT005.Value')</range>
+		<range TopLeft="E9" Format="0.00" Type="calc">hismax('H5/PT004.Value')</range>
+		<range TopLeft="F9" Format="0.00" Type="calc">hismin('H5/PT004.Value')</range>
+		<range TopLeft="G9" Format="0.00" Type="calc">hisavg('H5/PT004.Value')</range>
+		<range TopLeft="H9" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I9" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J9" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K9" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L9" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M9" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N9" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H5-3-->
+		<range TopLeft="A10" Format="0.00" Type="text">威204H5-3井</range>
+		<range TopLeft="B10" Format="0.00" Type="calc">hismax('H5/PT008.Value')</range>
+		<range TopLeft="C10" Format="0.00" Type="calc">hismin('H5/PT008.Value')</range>
+		<range TopLeft="D10" Format="0.00" Type="calc">hisavg('H5/PT008.Value')</range>
+		<range TopLeft="E10" Format="0.00" Type="calc">hismax('H5/PT007.Value')</range>
+		<range TopLeft="F10" Format="0.00" Type="calc">hismin('H5/PT007.Value')</range>
+		<range TopLeft="G10" Format="0.00" Type="calc">hisavg('H5/PT007.Value')</range>
+		<range TopLeft="H10" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I10" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J10" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K10" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L10" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M10" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N10" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H5-4-->
+		<range TopLeft="A11" Format="0.00" Type="text">威204H5-4井</range>
+		<range TopLeft="B11" Format="0.00" Type="calc">hismax('H5/PT011.Value')</range>
+		<range TopLeft="C11" Format="0.00" Type="calc">hismin('H5/PT011.Value')</range>
+		<range TopLeft="D11" Format="0.00" Type="calc">hisavg('H5/PT011.Value')</range>
+		<range TopLeft="E11" Format="0.00" Type="calc">hismax('H5/PT010.Value')</range>
+		<range TopLeft="F11" Format="0.00" Type="calc">hismin('H5/PT010.Value')</range>
+		<range TopLeft="G11" Format="0.00" Type="calc">hisavg('H5/PT010.Value')</range>
+		<range TopLeft="H11" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I11" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J11" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K11" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L11" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M11" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N11" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H5-5-->
+		<range TopLeft="A12" Format="0.00" Type="text">威204H5-5井</range>
+		<range TopLeft="B12" Format="0.00" Type="calc">hismax('H5/PT014.Value')</range>
+		<range TopLeft="C12" Format="0.00" Type="calc">hismin('H5/PT014.Value')</range>
+		<range TopLeft="D12" Format="0.00" Type="calc">hisavg('H5/PT014.Value')</range>
+		<range TopLeft="E12" Format="0.00" Type="calc">hismax('H5/PT013.Value')</range>
+		<range TopLeft="F12" Format="0.00" Type="calc">hismin('H5/PT013.Value')</range>
+		<range TopLeft="G12" Format="0.00" Type="calc">hisavg('H5/PT013.Value')</range>
+		<range TopLeft="H12" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I12" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J12" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K12" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L12" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M12" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N12" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H5-6-->
+		<range TopLeft="A13" Format="0.00" Type="text">威204H5-6井</range>
+		<range TopLeft="B13" Format="0.00" Type="calc">hismax('H5/PT017.Value')</range>
+		<range TopLeft="C13" Format="0.00" Type="calc">hismin('H5/PT017.Value')</range>
+		<range TopLeft="D13" Format="0.00" Type="calc">hisavg('H5/PT017.Value')</range>
+		<range TopLeft="E13" Format="0.00" Type="calc">hismax('H5/PT016.Value')</range>
+		<range TopLeft="F13" Format="0.00" Type="calc">hismin('H5/PT016.Value')</range>
+		<range TopLeft="G13" Format="0.00" Type="calc">hisavg('H5/PT016.Value')</range>
+		<range TopLeft="H13" Format="0.00" Type="calc">max(hislast('H5/TRQ1_YL.Value'),hislast('H5/TRQ2_YL.Value'))</range>
+		<range TopLeft="I13" Format="0.0000" Type="calc">(hos('H5/TRQ1_HourReport',1)+hos('H5/TRQ2_HourReport',1))/10000</range>
+		<range TopLeft="J13" Format="0.000" Type="calc">(hos('H5/QTS1_Report',1)+hos('H5/QTS2_Report',1))/1000</range>
+		<range TopLeft="K13" Format="0.0000" Type="calc">hisfirst('H5/TRQ1_SSLL.Value')+hisfirst('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L13" Format="0.0000" Type="calc">hislast('H5/TRQ1_SSLL.Value')+hislast('H5/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M13" Format="0.00" Type="calc">max(hisfirst('H5/TRQ1_WD.Value'),hisfirst('H5/TRQ2_WD.Value'))</range>
+		<range TopLeft="N13" Format="0.00" Type="calc">max(hislast('H5/TRQ1_WD.Value'),hislast('H5/TRQ2_WD.Value'))</range>
+		<!--204H10-1-->
+		<range TopLeft="A14" Format="0.00" Type="text">威204H10-1井</range>
+		<range TopLeft="B14" Format="0.00" Type="calc">hismax('H10/PT002.Value')</range>
+		<range TopLeft="C14" Format="0.00" Type="calc">hismin('H10/PT002.Value')</range>
+		<range TopLeft="D14" Format="0.00" Type="calc">hisavg('H10/PT002.Value')</range>
+		<range TopLeft="E14" Format="0.00" Type="calc">hismax('H10/PT001.Value')</range>
+		<range TopLeft="F14" Format="0.00" Type="calc">hismin('H10/PT001.Value')</range>
+		<range TopLeft="G14" Format="0.00" Type="calc">hisavg('H10/PT001.Value')</range>
+		<range TopLeft="H14" Format="0.00" Type="calc">hislast('H10/TRQ1_YL.Value')</range>
+		<range TopLeft="I14" Format="0.0000" Type="calc">hos('H10/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J14" Format="0.000" Type="calc">hos('H10/QTS1_Report',1)/1000</range>
+		<range TopLeft="K14" Format="0.0000" Type="calc">hisfirst('H10/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L14" Format="0.0000" Type="calc">hislast('H10/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M14" Format="0.00" Type="calc">hisfirst('H10/TRQ1_WD.Value')</range>
+		<range TopLeft="N14" Format="0.00" Type="calc">hislast('H10/TRQ1_WD.Value')</range>
+		<!--202H1-1-->
+		<range TopLeft="A15" Format="0.00" Type="text">威202H1-1井</range>
+		<range TopLeft="B15" Format="0.00" Type="calc">hismax('H1/PT002.Value')</range>
+		<range TopLeft="C15" Format="0.00" Type="calc">hismin('H1/PT002.Value')</range>
+		<range TopLeft="D15" Format="0.00" Type="calc">hisavg('H1/PT002.Value')</range>
+		<range TopLeft="E15" Format="0.00" Type="calc">hismax('H1/PT001.Value')</range>
+		<range TopLeft="F15" Format="0.00" Type="calc">hismin('H1/PT001.Value')</range>
+		<range TopLeft="G15" Format="0.00" Type="calc">hisavg('H1/PT001.Value')</range>
+		<range TopLeft="H15" Format="0.00" Type="calc">hislast('H1/TRQ1_YL.Value')</range>
+		<range TopLeft="I15" Format="0.0000" Type="calc">hos('H1/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J15" Format="0.000" Type="calc">hos('H1/QTS1_Report',1)/1000</range>
+		<range TopLeft="K15" Format="0.0000" Type="calc">hisfirst('H1/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L15" Format="0.0000" Type="calc">hislast('H1/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M15" Format="0.00" Type="calc">hisfirst('H1/TRQ1_WD.Value')</range>
+		<range TopLeft="N15" Format="0.00" Type="calc">hislast('H1/TRQ1_WD.Value')</range>
+		<!--202H1-2-->
+		<range TopLeft="A16" Format="0.00" Type="text">威202H1-2井</range>
+		<range TopLeft="B16" Format="0.00" Type="calc">hismax('H1/PT005.Value')</range>
+		<range TopLeft="C16" Format="0.00" Type="calc">hismin('H1/PT005.Value')</range>
+		<range TopLeft="D16" Format="0.00" Type="calc">hisavg('H1/PT005.Value')</range>
+		<range TopLeft="E16" Format="0.00" Type="calc">hismax('H1/PT004.Value')</range>
+		<range TopLeft="F16" Format="0.00" Type="calc">hismin('H1/PT004.Value')</range>
+		<range TopLeft="G16" Format="0.00" Type="calc">hisavg('H1/PT004.Value')</range>
+		<range TopLeft="H16" Format="0.00" Type="calc">hislast('H1/TRQ2_YL.Value')</range>
+		<range TopLeft="I16" Format="0.0000" Type="calc">hos('H1/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="J16" Format="0.000" Type="calc">hos('H1/QTS2_Report',1)/1000</range>
+		<range TopLeft="K16" Format="0.0000" Type="calc">hisfirst('H1/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L16" Format="0.0000" Type="calc">hislast('H1/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M16" Format="0.00" Type="calc">hisfirst('H1/TRQ2_WD.Value')</range>
+		<range TopLeft="N16" Format="0.00" Type="calc">hislast('H1/TRQ2_WD.Value')</range>
+		<!--202H1-3-->
+		<range TopLeft="A17" Format="0.00" Type="text">威202H1-3井</range>
+		<range TopLeft="B17" Format="0.00" Type="calc">hismax('H1/PT008.Value')</range>
+		<range TopLeft="C17" Format="0.00" Type="calc">hismin('H1/PT008.Value')</range>
+		<range TopLeft="D17" Format="0.00" Type="calc">hisavg('H1/PT008.Value')</range>
+		<range TopLeft="E17" Format="0.00" Type="calc">hismax('H1/PT007.Value')</range>
+		<range TopLeft="F17" Format="0.00" Type="calc">hismin('H1/PT007.Value')</range>
+		<range TopLeft="G17" Format="0.00" Type="calc">hisavg('H1/PT007.Value')</range>
+		<range TopLeft="H17" Format="0.00" Type="calc">hislast('H1/TRQ3_YL.Value')</range>
+		<range TopLeft="I17" Format="0.0000" Type="calc">hos('H1/TRQ3_HourReport',1)/10000</range>
+		<range TopLeft="J17" Format="0.000" Type="calc">hos('H1/QTS3_Report',1)/1000</range>
+		<range TopLeft="K17" Format="0.0000" Type="calc">hisfirst('H1/TRQ3_SSLL.Value')</range>
+		<range TopLeft="L17" Format="0.0000" Type="calc">hislast('H1/TRQ3_SSLL.Value')</range>
+		<range TopLeft="M17" Format="0.00" Type="calc">hisfirst('H1/TRQ3_WD.Value')</range>
+		<range TopLeft="N17" Format="0.00" Type="calc">hislast('H1/TRQ3_WD.Value')</range>
+		<!--202H1-4-->
+		<range TopLeft="A18" Format="0.00" Type="text">威202H1-4井</range>
+		<range TopLeft="B18" Format="0.00" Type="calc">hismax('H1/PT011.Value')</range>
+		<range TopLeft="C18" Format="0.00" Type="calc">hismin('H1/PT011.Value')</range>
+		<range TopLeft="D18" Format="0.00" Type="calc">hisavg('H1/PT011.Value')</range>
+		<range TopLeft="E18" Format="0.00" Type="calc">hismax('H1/PT010.Value')</range>
+		<range TopLeft="F18" Format="0.00" Type="calc">hismin('H1/PT010.Value')</range>
+		<range TopLeft="G18" Format="0.00" Type="calc">hisavg('H1/PT010.Value')</range>
+		<range TopLeft="H18" Format="0.00" Type="calc">hislast('H1/TRQ4_YL.Value')</range>
+		<range TopLeft="I18" Format="0.0000" Type="calc">hos('H1/TRQ4_HourReport',1)/10000</range>
+		<range TopLeft="J18" Format="0.000" Type="calc">hos('H1/QTS4_Report',1)/1000</range>
+		<range TopLeft="K18" Format="0.0000" Type="calc">hisfirst('H1/TRQ4_SSLL.Value')</range>
+		<range TopLeft="L18" Format="0.0000" Type="calc">hislast('H1/TRQ4_SSLL.Value')</range>
+		<range TopLeft="M18" Format="0.00" Type="calc">hisfirst('H1/TRQ4_WD.Value')</range>
+		<range TopLeft="N18" Format="0.00" Type="calc">hislast('H1/TRQ4_WD.Value')</range>
+		<!--202H1-5-->
+		<range TopLeft="A19" Format="0.00" Type="text">威202H1-5井</range>
+		<range TopLeft="B19" Format="0.00" Type="calc">hismax('H1/PT014.Value')</range>
+		<range TopLeft="C19" Format="0.00" Type="calc">hismin('H1/PT014.Value')</range>
+		<range TopLeft="D19" Format="0.00" Type="calc">hisavg('H1/PT014.Value')</range>
+		<range TopLeft="E19" Format="0.00" Type="calc">hismax('H1/PT013.Value')</range>
+		<range TopLeft="F19" Format="0.00" Type="calc">hismin('H1/PT013.Value')</range>
+		<range TopLeft="G19" Format="0.00" Type="calc">hisavg('H1/PT013.Value')</range>
+		<range TopLeft="H19" Format="0.00" Type="calc">hislast('H1/TRQ5_YL.Value')</range>
+		<range TopLeft="I19" Format="0.0000" Type="calc">hos('H1/TRQ5_HourReport',1)/10000</range>
+		<range TopLeft="J19" Format="0.000" Type="calc">hos('H1/QTS5_Report',1)/1000</range>
+		<range TopLeft="K19" Format="0.0000" Type="calc">hisfirst('H1/TRQ5_SSLL.Value')</range>
+		<range TopLeft="L19" Format="0.0000" Type="calc">hislast('H1/TRQ5_SSLL.Value')</range>
+		<range TopLeft="M19" Format="0.00" Type="calc">hisfirst('H1/TRQ5_WD.Value')</range>
+		<range TopLeft="N19" Format="0.00" Type="calc">hislast('H1/TRQ5_WD.Value')</range>
+		<!--202H1-6-->
+		<range TopLeft="A20" Format="0.00" Type="text">威202H1-6井</range>
+		<range TopLeft="B20" Format="0.00" Type="calc">hismax('H1/PT017.Value')</range>
+		<range TopLeft="C20" Format="0.00" Type="calc">hismin('H1/PT017.Value')</range>
+		<range TopLeft="D20" Format="0.00" Type="calc">hisavg('H1/PT017.Value')</range>
+		<range TopLeft="E20" Format="0.00" Type="calc">hismax('H1/PT016.Value')</range>
+		<range TopLeft="F20" Format="0.00" Type="calc">hismin('H1/PT016.Value')</range>
+		<range TopLeft="G20" Format="0.00" Type="calc">hisavg('H1/PT016.Value')</range>
+		<range TopLeft="H20" Format="0.00" Type="calc">hislast('H1/TRQ6_YL.Value')</range>
+		<range TopLeft="I20" Format="0.0000" Type="calc">hos('H1/TRQ6_HourReport',1)/10000</range>
+		<range TopLeft="J20" Format="0.000" Type="calc">hos('H1/QTS6_Report',1)/1000</range>
+		<range TopLeft="K20" Format="0.0000" Type="calc">hisfirst('H1/TRQ6_SSLL.Value')</range>
+		<range TopLeft="L20" Format="0.0000" Type="calc">hislast('H1/TRQ6_SSLL.Value')</range>
+		<range TopLeft="M20" Format="0.00" Type="calc">hisfirst('H1/TRQ6_WD.Value')</range>
+		<range TopLeft="N20" Format="0.00" Type="calc">hislast('H1/TRQ6_WD.Value')</range>
+		<!--202H3-1-->
+		<range TopLeft="A21" Format="0.00" Type="text">威202H3-1井</range>
+		<range TopLeft="B21" Format="0.00" Type="calc">hismax('H3/PT002.Value')</range>
+		<range TopLeft="C21" Format="0.00" Type="calc">hismin('H3/PT002.Value')</range>
+		<range TopLeft="D21" Format="0.00" Type="calc">hisavg('H3/PT002.Value')</range>
+		<range TopLeft="E21" Format="0.00" Type="calc">hismax('H3/PT001.Value')</range>
+		<range TopLeft="F21" Format="0.00" Type="calc">hismin('H3/PT001.Value')</range>
+		<range TopLeft="G21" Format="0.00" Type="calc">hisavg('H3/PT001.Value')</range>
+		<range TopLeft="H21" Format="0.00" Type="calc">hislast('H3/TRQ1_YL.Value')</range>
+		<range TopLeft="I21" Format="0.0000" Type="calc">hos('H3/TRQ1_HourReport',1)/10000</range>
+		<range TopLeft="J21" Format="0.000" Type="calc">hos('H3/QTS1_Report',1)/1000</range>
+		<range TopLeft="K21" Format="0.0000" Type="calc">hisfirst('H3/TRQ1_SSLL.Value')</range>
+		<range TopLeft="L21" Format="0.0000" Type="calc">hislast('H3/TRQ1_SSLL.Value')</range>
+		<range TopLeft="M21" Format="0.00" Type="calc">hisfirst('H3/TRQ1_WD.Value')</range>
+		<range TopLeft="N21" Format="0.00" Type="calc">hislast('H3/TRQ1_WD.Value')</range>
+		<!--202H3-2-->
+		<range TopLeft="A22" Format="0.00" Type="text">威202H3-2井</range>
+		<range TopLeft="B22" Format="0.00" Type="calc">hismax('H3/PT005.Value')</range>
+		<range TopLeft="C22" Format="0.00" Type="calc">hismin('H3/PT005.Value')</range>
+		<range TopLeft="D22" Format="0.00" Type="calc">hisavg('H3/PT005.Value')</range>
+		<range TopLeft="E22" Format="0.00" Type="calc">hismax('H3/PT004.Value')</range>
+		<range TopLeft="F22" Format="0.00" Type="calc">hismin('H3/PT004.Value')</range>
+		<range TopLeft="G22" Format="0.00" Type="calc">hisavg('H3/PT004.Value')</range>
+		<range TopLeft="H22" Format="0.00" Type="calc">hislast('H3/TRQ2_YL.Value')</range>
+		<range TopLeft="I22" Format="0.0000" Type="calc">hos('H3/TRQ2_HourReport',1)/10000</range>
+		<range TopLeft="J22" Format="0.000" Type="calc">hos('H3/QTS2_Report',1)/1000</range>
+		<range TopLeft="K22" Format="0.0000" Type="calc">hisfirst('H3/TRQ2_SSLL.Value')</range>
+		<range TopLeft="L22" Format="0.0000" Type="calc">hislast('H3/TRQ2_SSLL.Value')</range>
+		<range TopLeft="M22" Format="0.00" Type="calc">hisfirst('H3/TRQ2_WD.Value')</range>
+		<range TopLeft="N22" Format="0.00" Type="calc">hislast('H3/TRQ2_WD.Value')</range>
+		<!--202H3-3-->
+		<range TopLeft="A23" Format="0.00" Type="text">威202H3-3井</range>
+		<range TopLeft="B23" Format="0.00" Type="calc">hismax('H3/PT008.Value')</range>
+		<range TopLeft="C23" Format="0.00" Type="calc">hismin('H3/PT008.Value')</range>
+		<range TopLeft="D23" Format="0.00" Type="calc">hisavg('H3/PT008.Value')</range>
+		<range TopLeft="E23" Format="0.00" Type="calc">hismax('H3/PT007.Value')</range>
+		<range TopLeft="F23" Format="0.00" Type="calc">hismin('H3/PT007.Value')</range>
+		<range TopLeft="G23" Format="0.00" Type="calc">hisavg('H3/PT007.Value')</range>
+		<range TopLeft="H23" Format="0.00" Type="calc">hislast('H3/TRQ3_YL.Value')</range>
+		<range TopLeft="I23" Format="0.0000" Type="calc">hos('H3/TRQ3_HourReport',1)/10000</range>
+		<range TopLeft="J23" Format="0.000" Type="calc">hos('H3/QTS3_Report',1)/1000</range>
+		<range TopLeft="K23" Format="0.0000" Type="calc">hisfirst('H3/TRQ3_SSLL.Value')</range>
+		<range TopLeft="L23" Format="0.0000" Type="calc">hislast('H3/TRQ3_SSLL.Value')</range>
+		<range TopLeft="M23" Format="0.00" Type="calc">hisfirst('H3/TRQ3_WD.Value')</range>
+		<range TopLeft="N23" Format="0.00" Type="calc">hislast('H3/TRQ3_WD.Value')</range>
+		<!--202H3-4-->
+		<range TopLeft="A24" Format="0.00" Type="text">威202H3-4井</range>
+		<range TopLeft="B24" Format="0.00" Type="calc">hismax('H3/PT011.Value')</range>
+		<range TopLeft="C24" Format="0.00" Type="calc">hismin('H3/PT011.Value')</range>
+		<range TopLeft="D24" Format="0.00" Type="calc">hisavg('H3/PT011.Value')</range>
+		<range TopLeft="E24" Format="0.00" Type="calc">hismax('H3/PT010.Value')</range>
+		<range TopLeft="F24" Format="0.00" Type="calc">hismin('H3/PT010.Value')</range>
+		<range TopLeft="G24" Format="0.00" Type="calc">hisavg('H3/PT010.Value')</range>
+		<range TopLeft="H24" Format="0.00" Type="calc">hislast('H3/TRQ4_YL.Value')</range>
+		<range TopLeft="I24" Format="0.0000" Type="calc">hos('H3/TRQ4_HourReport',1)/10000</range>
+		<range TopLeft="J24" Format="0.000" Type="calc">hos('H3/QTS4_Report',1)/1000</range>
+		<range TopLeft="K24" Format="0.0000" Type="calc">hisfirst('H3/TRQ4_SSLL.Value')</range>
+		<range TopLeft="L24" Format="0.0000" Type="calc">hislast('H3/TRQ4_SSLL.Value')</range>
+		<range TopLeft="M24" Format="0.00" Type="calc">hisfirst('H3/TRQ4_WD.Value')</range>
+		<range TopLeft="N24" Format="0.00" Type="calc">hislast('H3/TRQ4_WD.Value')</range>
+		<!--202H3-5-->
+		<range TopLeft="A25" Format="0.00" Type="text">威202H3-5井</range>
+		<range TopLeft="B25" Format="0.00" Type="calc">hismax('H3/PT014.Value')</range>
+		<range TopLeft="C25" Format="0.00" Type="calc">hismin('H3/PT014.Value')</range>
+		<range TopLeft="D25" Format="0.00" Type="calc">hisavg('H3/PT014.Value')</range>
+		<range TopLeft="E25" Format="0.00" Type="calc">hismax('H3/PT013.Value')</range>
+		<range TopLeft="F25" Format="0.00" Type="calc">hismin('H3/PT013.Value')</range>
+		<range TopLeft="G25" Format="0.00" Type="calc">hisavg('H3/PT013.Value')</range>
+		<range TopLeft="H25" Format="0.00" Type="calc">hislast('H3/TRQ5_YL.Value')</range>
+		<range TopLeft="I25" Format="0.0000" Type="calc">hos('H3/TRQ5_HourReport',1)/10000</range>
+		<range TopLeft="J25" Format="0.000" Type="calc">hos('H3/QTS5_Report',1)/1000</range>
+		<range TopLeft="K25" Format="0.0000" Type="calc">hisfirst('H3/TRQ5_SSLL.Value')</range>
+		<range TopLeft="L25" Format="0.0000" Type="calc">hislast('H3/TRQ5_SSLL.Value')</range>
+		<range TopLeft="M25" Format="0.00" Type="calc">hisfirst('H3/TRQ5_WD.Value')</range>
+		<range TopLeft="N25" Format="0.00" Type="calc">hislast('H3/TRQ5_WD.Value')</range>
+		<!--202H3-6-->
+		<range TopLeft="A26" Format="0.00" Type="text">威202H3-6井</range>
+		<range TopLeft="B26" Format="0.00" Type="calc">hismax('H3/PT017.Value')</range>
+		<range TopLeft="C26" Format="0.00" Type="calc">hismin('H3/PT017.Value')</range>
+		<range TopLeft="D26" Format="0.00" Type="calc">hisavg('H3/PT017.Value')</range>
+		<range TopLeft="E26" Format="0.00" Type="calc">hismax('H3/PT016.Value')</range>
+		<range TopLeft="F26" Format="0.00" Type="calc">hismin('H3/PT016.Value')</range>
+		<range TopLeft="G26" Format="0.00" Type="calc">hisavg('H3/PT016.Value')</range>
+		<range TopLeft="H26" Format="0.00" Type="calc">hislast('H3/TRQ6_YL.Value')</range>
+		<range TopLeft="I26" Format="0.0000" Type="calc">hos('H3/TRQ6_HourReport',1)/10000</range>
+		<range TopLeft="J26" Format="0.000" Type="calc">hos('H3/QTS6_Report',1)/1000</range>
+		<range TopLeft="K26" Format="0.0000" Type="calc">hisfirst('H3/TRQ6_SSLL.Value')</range>
+		<range TopLeft="L26" Format="0.0000" Type="calc">hislast('H3/TRQ6_SSLL.Value')</range>
+		<range TopLeft="M26" Format="0.00" Type="calc">hisfirst('H3/TRQ6_WD.Value')</range>
+		<range TopLeft="N26" Format="0.00" Type="calc">hislast('H1/TRQ6_WD.Value')</range>
+	</body>
+	<!--报表尾部-->
+	<foot>
+	</foot>
+</Report>
