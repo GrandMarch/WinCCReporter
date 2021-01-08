@@ -5,11 +5,17 @@ wincc自定义报表
 
 #### 软件架构
 表格显示部分使用了Reogrid（https://reogrid.net/）
+
 数据存储使用MariadDB（进行了分表）
+
 数据采集基于WinCC
+
 软件一共由两部分组成：数据采集和报表显示。
+
 数据采集部分有readwincctosql完成
+
 报表显示由winccreportcontrol完成
+
 DotNetFormula、MySqlParallelQuery项目是辅助项目。
 
 #### 安装教程
